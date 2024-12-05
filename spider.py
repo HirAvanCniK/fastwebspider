@@ -7,7 +7,7 @@ class Spider():
     BLACKLIST = []
     FOUND = False
 
-    def __init__(self, base_url: str, term_to_find: str, threads=True, block_on_found=False):
+    def __init__(self, base_url: str, term_to_find: str, threads: bool = True, block_on_found: bool = False):
         self.BASE_URL = base_url
         self.TERM_TO_FIND = term_to_find
         self.THREADS = threads
